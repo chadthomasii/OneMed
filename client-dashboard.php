@@ -1,3 +1,10 @@
+<?php 
+session_start();
+if(empty($_SESSION['login_user'])) {
+    header("Location: /");
+}
+?>
+
 <?php include_once("header.php");?>
 
 

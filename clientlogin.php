@@ -19,10 +19,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     if($count == 1){
         //Session_register("myemail");
         $_SESSION['login_user']=$myemail;
-        echo "successfully logged in!";
+        echo json_encode($row);
     }
-    else{
-        $error = "Your Email or Password is invalid";
+    else
+    {
+        $error= array('status' => 'fail');
+
+        echo json_encode($error);
+
     }
 }
 
