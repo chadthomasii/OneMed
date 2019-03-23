@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+:root 
+{
+    --main-color: #ad2333;
+    --dark-text: #424242;
+    --error: #9A2828;
+    --success: #5cb85c;
+}
+  
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+/* ================================================================== 
+                                    GENEREAL STYLES
+   ================================================================== */
+
+.red-page
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-color);
+}
+
+.login-header
+{
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.login-header img
+{
+    height: 200px;
+}
+
+.login-header h1
+{
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    margin: 10px 0px;
+}
+
+
+.form-button
+{
+    height: 50px;
+    width: 100%;
+    margin: 10px 0px;
+    background-color:#fff;
+    font-weight: 900;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--dark-text);
+    font-size: 1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+/* ================================================================== 
+                                    Login
+   ================================================================== */
+
+
+/*Login Form */
+
+.login-form-group
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.login-form-group input
+{
+    height: 50px;
+    width: 100%;
+    margin: 10px 0px;
+    background-color:#fff;
+    padding-left: 5px;
+    font-weight: 900;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+
+.login-form-group h1
+{
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+/* ================================================================== 
+                                    Register
+   ================================================================== */
+
+.register-button-group
+{
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+.register-button-group h1
+{
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
