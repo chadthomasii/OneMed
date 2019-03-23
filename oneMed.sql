@@ -24,14 +24,14 @@ zipcode CHAR(5),
 password VARCHAR(15));
 
 CREATE TABLE Serves(
-clientID INT DEFAULT NULL,
-partnerID INT DEFAULT NULL,
+clientID INT,
+partnerID INT,
 PRIMARY KEY(clientID,partnerID),
 FOREIGN KEY(clientID) REFERENCES Clients(id),
 FOREIGN KEY(partnerID) REFERENCES Partners(partnerID));
 
 CREATE TABLE MedicalReportsHas(
-id INT DEFAULT NULL,
+id INT,
 comments VARCHAR(40),
 lastDate DATE,
 PRIMARY KEY(id),
