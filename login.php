@@ -2,11 +2,11 @@
 
     <div class="red-page">
 
-        <div class="login-header">
+        <div class="login-header animated fadeInDown">
             <img src="img/onemed-white.png">
         </div>
 
-        <form action="login.php" method="post" class="login-form-group" id=login-form>
+        <form action="login.php" method="post" class="form-authenticate animated fadeIn" id="login-form">
 
             <input type="email" name="email" placeholder= "Email" required>
             <input type="password" name="password" placeholder= "Password" required>
