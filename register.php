@@ -19,8 +19,8 @@
 
         <form action="register.php" method="post" class="form-authenticate animated fadeIn" id="register-client-form">
 
-            <input type="fname" name="text" placeholder= "First Name" required>
-            <input type="lname" name="text" placeholder= "Last Name" required>
+            <input type="text" name="fName" placeholder= "First Name" required>
+            <input type="text" name="lName" placeholder= "Last Name" required>
             <input type="email" name="email" placeholder= "Email" required>
             <input type="number" name="zipcode" max="5" min="5" placeholder= "Zip Code" required>
             <input type="password" name="password" placeholder= "Password" required>
@@ -34,7 +34,7 @@
 
         <form action="register.php" method="post" class="form-authenticate animated fadeIn" id="register-partner-form">
 
-            <input type="name" name="text" placeholder= "Partner Name" required>
+            <input type="text" name="name" placeholder= "Partner Name" required>
             <input type="email" name="email" placeholder= "Email" required>
             <input type="number" name="zipcode" max="5" min="5" placeholder= "Zip Code" required>
             <input type="password" name="password" placeholder= "Password" required>
