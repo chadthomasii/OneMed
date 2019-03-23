@@ -16,28 +16,41 @@ password VARCHAR(12));
 
 CREATE TABLE Partners(
 partnerID int AUTO_INCREMENT PRIMARY KEY,
-name VARCHAR(40),
-address VARCHAR(40),
-city VARCHAR(12),
+name VARCHAR(80),
+address VARCHAR(80),
+city VARCHAR(15),
 state VARCHAR(15),
 zipcode CHAR(5),
-client VARCHAR(40),
 password VARCHAR(15));
 
 CREATE TABLE Serves(
-id INT DEFAULT NULL,
+clientID INT DEFAULT NULL,
 partnerID INT DEFAULT NULL,
-PRIMARY KEY(id,partnerID),
-FOREIGN KEY(id) REFERENCES Clients(id),
+PRIMARY KEY(clientID,partnerID),
+FOREIGN KEY(clientID) REFERENCES Clients(id),
 FOREIGN KEY(partnerID) REFERENCES Partners(partnerID));
 
 CREATE TABLE MedicalReportsHas(
 id INT DEFAULT NULL,
 comments VARCHAR(40),
+lastDate DATE,
 PRIMARY KEY(id),
 FOREIGN KEY(id) REFERENCES Clients(id));
 
 # LOADING DATA
  INSERT INTO Clients VALUES
 (NULL,'ejfjfJh8%54ZEEJjie','John','Doe','28204','jdoe@yahoo.com','j%ruMo89'),
+(NULL,'zHol38jH%28Z4RO%db','Alford','Johnson','28216','alfordMoon@gmail.com','aRealMo88%'),
+(NULL,'zHol38jH%28Z4RO%db','Alford','Johnson','28216','alfordMoon@gmail.com','aRealMo88%'),
 (NULL,'zHol38jH%28Z4RO%db','Alford','Johnson','28216','alfordMoon@gmail.com','aRealMo88%');
+
+INSERT INTO Partners VALUES
+(NULL,'Charlotte Community Health Clinic','8401 Medical Plaza Dr suite 300','Charlotte','North Carolina','28262','l%fe28MdP'),
+(NULL,'NC MedAssist','4428 Taggart Creek Road, Suite 101','Charlotte','North Carolina','28208','Plu$89H%');
+
+INSERT INTO Serves VALUES
+(1,1),
+(1,2);
+
+INSERT INTO MedicalReportsHas VALUES
+(1,'Normal Checkup','2019-03-23');
