@@ -1,8 +1,8 @@
 <?php
 $dbhost = 'localhost';
 $dbUser = 'root';
-$dbPassword ='';
-$dbDatabase='onemed';
+$dbPassword ='root';
+$dbDatabase='oneMed';
 
 //Create connection.
 $dbc = mysqli_connect($dbhost,$dbUser,$dbPassword,$dbDatabase);
