@@ -1,6 +1,6 @@
 <?php include_once("header.php");?>
 
-    <div class="login-page">
+    <div class="register-page">
 
         <div class="login-header-image">
             <img src="img/onemed-white.png">
@@ -12,11 +12,8 @@
             <input type="password" name="password" placeholder= "Password" required>
             <button type="submit" form="login-form" value="Submit">Sign In</button>
 
-            <h1>Don't have an account?<a href="./register">Register</a></h1>
+            <h1>Don't have an account? <a href="./register">Register</a></h1>
         </form>
-
-
-    
 
     </div>
 
