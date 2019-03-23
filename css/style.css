@@ -27,9 +27,9 @@
 
 .red-page
 {
-    height: 100vh;
     width: 100vw;
     background-color: var(--main-color);
+    padding-bottom: 20%;
 }
 
 .login-header
@@ -49,7 +49,7 @@
 {
     text-align: center;
     color: #fff;
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 10px 0px;
 }
 
@@ -77,17 +77,19 @@
 
 /*Login Form */
 
-.login-form-group
+.form-authenticate
 {
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
     width: 300px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 20px;
+    animation-delay: 0.7s;
+
 }
 
-.login-form-group input
+.form-authenticate input
 {
     height: 50px;
     width: 100%;
@@ -100,7 +102,7 @@
 }
 
 
-.login-form-group h1
+.form-authenticate h1
 {
     color: #fff;
     font-size: 1.2em;
@@ -119,6 +121,7 @@
 {
     width: 300px;
     margin: 0 auto;
+    animation-delay: 0.7s;
 }
 
 
@@ -128,4 +131,23 @@
     font-size: 1.2em;
     text-align: center;
     margin-top: 20px;
+}
+
+#register-client-form
+{
+    display: none;
+    background-color: var(--main-color);
+    padding-bottom: 30px;
+}
+
+#register-partner-form
+{
+    display: none;
+    background-color: var(--main-color);
+    padding-bottom: 30px;
+}
+
+.active-form
+{
+    display: block !important;
 }
