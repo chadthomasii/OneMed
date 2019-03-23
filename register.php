@@ -1,19 +1,18 @@
 <?php include_once("header.php");?>
 
-    <div class="register-page">
+    <div class="red-page">
 
-        <div class="login-header-image">
+        <div class="login-header">
             <img src="img/onemed-white.png">
+            <h1>I am a...</h1>
         </div>
 
-        <form action="login.php" method="post" class="login-form-group" id=login-form>
-
-            <input type="email" name="email" placeholder= "Email" required>
-            <input type="password" name="password" placeholder= "Password" required>
-            <button type="submit" form="login-form" value="Submit">Sign In</button>
-
-            <h1>Don't have an account? <a href="./register">Register</a></h1>
-        </form>
+        
+        <div class="register-button-group">
+            <button class="form-button">Client</button>
+            <button class="form-button"> Partner</button>
+            <h1>I need to  <a href="./login">Login</a></h1>
+        </div>
 
     </div>
 
