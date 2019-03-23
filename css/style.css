@@ -19,18 +19,20 @@
 }
 
 
+
+
 /* ================================================================== 
-                                    Login
+                                    GENEREAL STYLES
    ================================================================== */
 
-.login-page
+.red-page
 {
     height: 100vh;
     width: 100vw;
     background-color: var(--main-color);
 }
 
-.login-header-image
+.login-header
 {
     width: 100%;
     text-align: center;
@@ -38,10 +40,39 @@
 
 }
 
-.login-header-image img
+.login-header img
 {
     height: 200px;
 }
+
+.login-header h1
+{
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    margin: 10px 0px;
+}
+
+
+.form-button
+{
+    height: 50px;
+    width: 100%;
+    margin: 10px 0px;
+    background-color:#fff;
+    font-weight: 900;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--dark-text);
+    font-size: 1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+/* ================================================================== 
+                                    Login
+   ================================================================== */
 
 
 /*Login Form */
@@ -68,29 +99,33 @@
     border-radius: 5px;
 }
 
-.login-form-group button
-{
-    height: 50px;
-    width: 100%;
-    margin: 10px 0px;
-    background-color:#fff;
-    font-weight: 900;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    color: var(--dark-text);
-    font-size: 1em;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
 
 .login-form-group h1
 {
     color: #fff;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
+    margin-top: 20px;
 }
 
-.login-form-group h1 a
-{
 
+
+
+/* ================================================================== 
+                                    Register
+   ================================================================== */
+
+.register-button-group
+{
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+.register-button-group h1
+{
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
 }
